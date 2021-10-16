@@ -10,10 +10,10 @@ body {
   background-color: gray;
 }
 .wrapper {
-  height: 600px;
+  height: 650px;
   margin: 100px auto;
   position: relative;
-  width: 700px;
+  width: 1000px;
   border-radius: 30px;
 }
 .slider {
@@ -28,8 +28,8 @@ body {
   display: none;
 }
 .wrapper .controls {
-  left: 70%;
-
+  left: 76%;
+  margin-bottom: 50px;
   position: absolute;
 }
 
@@ -131,8 +131,8 @@ body {
 }
 
 .slider_text {
-  margin-top: 50px;
-  text-decoration: hotpink;
+  margin: 50px auto;
+
   font-size: 30px;
 }
 #slide1:checked ~ .slider_text > .slide1,
@@ -146,4 +146,15 @@ body {
   -moz-transform: scale(1);
   -o-transform: scale(1);
   transform: scale(1);
+}
+@media (max-width: 500px) {
+  .wrapper .controls,
+  .slider_text {
+    /* left: 39%; */
+    left: auto;
+    right: auto;
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+  }
 }
